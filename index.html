@@ -109,9 +109,6 @@
 </body>
 </html>
 
-Com certeza! Vamos começar a construir a estrutura HTML para a página inicial (homepage) da "Cidade das Empenas".
-O objetivo é criar um HTML limpo e semântico, que sirva de base para o design visual que aplicaremos com CSS depois. Vou me basear na análise que fizemos do PDF para incluir as seções mais importantes e um fluxo narrativo que engaje o visitante.
-Aqui está uma proposta de estrutura HTML para a página inicial:
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -200,13 +197,44 @@ Aqui está uma proposta de estrutura HTML para a página inicial:
     </section>
 
     <!-- Seção da Experiência Imersiva (breve introdução) -->
-    <section id="experiencia" class="immersive-experience">
-        <div class="container">
-            <h3>A Cidade Imaginária: Uma Experiência Sem Igual</h3>
-            <p>Inspirada na atmosfera de filmes como "Dogville", a exposição simula um palco minimalista onde linhas brancas no chão representam um mapa abstrato de São Paulo. Navegue por um labirinto urbano que revela novas obras e perspectivas únicas a cada curva.</p>
-            <a href="#" class="btn btn-primary">Explore a Experiência</a>
-        </div>
-    </section>
+    .experience-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.experience-card {
+  background-color: #333333;
+  border-radius: 10px;
+  padding: 20px;
+  width: calc(50% - 15px);
+  box-sizing: border-box;
+}
+
+.experience-card img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto 15px auto;
+  border-radius: 8px;
+}
+
+.experience-card h4 {
+  color: #ff6600;
+  margin-bottom: 10px;
+}
+
+.experience-card p {
+  color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  .experience-card {
+    width: 100%;
+  }
+}
 
     <!-- Rodapé do Site -->
     <footer class="main-footer">
