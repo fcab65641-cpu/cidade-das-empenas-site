@@ -1,0 +1,38 @@
+.experience-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.experience-card {
+  background-color: #333333;
+  border-radius: 10px;
+  padding: 20px;
+  width: calc(50% - 15px);
+  box-sizing: border-box;
+}
+
+.experience-card img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto 15px auto;
+  border-radius: 8px;
+}
+
+.experience-card h4 {
+  color: #ff6600;
+  margin-bottom: 10px;
+}
+
+.experience-card p {
+  color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  .experience-card {
+    width: 100%;
+  }
+}
