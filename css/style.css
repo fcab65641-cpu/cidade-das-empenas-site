@@ -1,0 +1,65 @@
+body {
+  font-family: Montserrat, sans-serif;
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.main-header,
+.main-footer {
+  background-color: #111111;
+  padding: 20px 0;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+.main-nav a {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+.hero,
+.about-exhibition,
+.photographer-section,
+.immersive-experience {
+  padding: 60px 0;
+}
+
+h1, h2, h3, h4 {
+  color: #ff6600;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #ff6600;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-top: 15px;
+}
+
+.card,
+.point {
+  background-color: #333333;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 8px;
+}
+
+.photographer-image img {
+  max-width: 300px;
+  border-radius: 8px;
+}
